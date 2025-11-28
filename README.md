@@ -12,6 +12,7 @@ Taking into account food regulations and the impose of ever decreasing amounts o
 I would like to use Agentic AI in the hopes of finding new metrices or/and improve given ones in order to make the BDM treatment more effective and as a result, decrease dosage of chemicals used, hence less resistant variants. I will be focusing on weather conditions as a possible factor that has not been accounted for as of yet.
 
 **WHY I USE AGENTIC AI**
+
 Using Agentic AI can assist me in achieving the above mentioned goal in a couple of ways:
 
 DATA PROCESSING - Agricultural research is a field which accumulates a lot of data. By using pattern learning algorithms, we can process this data to help gain insights no human can acquire nakedly.
@@ -24,6 +25,7 @@ Conveniently, it's reasoning process is open to us (the user) and can be judged 
 FUN AND EDUCATIONAL - Finally, it looks awesome and cool to be able to use the ADK toolkit :)
 
 **ARCHITECTURE OVERVIEW**
+
 ![https://www.canva.com/design/DAG5tcZuCYc/qNfig-CvSiajahxynreW-w/edit?utm_content=DAG5tcZuCYc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](url to embed)
 
 **Agents**
