@@ -1,6 +1,7 @@
 This project is based on earlier work presented by Dr. Nadav Nitzan https://www.linkedin.com/in/dr-nadav-nitzan-7a33a315/ and others. Huge thanks for inspiring me to contribute to this topic.
 
 **INTRODUCTION**
+
 Basil Downy Mildew(BDM) is considered a dire threat when it comes to the overall well being of the Basil growing industry in Israel. It can and will wipe out this plant if left unchecked.
 
 Current BDM prevention mechanisms (in Israel) are based on heuristically fumigating plants ("Treatment") inside a greenhouse when certain environmental conditions are met.
@@ -29,18 +30,22 @@ FUN AND EDUCATIONAL - Finally, it looks awesome and cool to be able to use the A
 ![https://www.canva.com/design/DAG5tcZuCYc/qNfig-CvSiajahxynreW-w/edit?utm_content=DAG5tcZuCYc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](url to embed)
 
 **Agents**
+
 1.`assert_agent` - His duty is to process user's request, understand it and delegate the task to `task_master_agent`. At the end it summarizes the answer before presenting it to the user.
 2.`task_master_agent` - Evaluates the kind of input presented by the assert_agent and dictates the modus operandi. It either calls `calc_infection_severity()` tool or asks weather_agent to extract climate parameters based on user's input.
 3.`weather_agent` - His only task is to get climate parameters for a specific place on earth by connecting to an external service such as Climate services information system(CSIS), getting the appropriate info and returning it to task_master_agent.
 
 **Custom tools**
+
 `calc_infection_severity()` - Get temperature, humidity, moisture values and calculate potential infection severity index(1-5).
 
 **Build-in tools**
+
 Gemini.1.25 - used to process user's messages.
 Code Executioner - Builds Inline code if the need arises. May be called only by task_master_agent
 
 **Execution scenarios/ Input types**
+
 Three different procedures might occur with respect to how the user interacts with the Agentic system.
 1.The user decides to query about topics unrelated to BDM, resulting in a gentlemen's response from the assert_agent, explaining that the Agent only processes request concerning BDM.
 2.The user asks for guidelines concerning BDM prevention while having exact environmental conditions in which Basil was grown and would like to assess the Severity Disease Index (SDI) in order to plan for treatment.
